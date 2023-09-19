@@ -37,5 +37,11 @@ export class AllSubjectsComponent implements OnInit{
     });
   }
 
+  navigateToViewSubjects(authorId:any) {
+    this.router.navigate(['/view-subject'], { queryParams: { id: authorId } }); // Use the route path to "view-books"
+  }
 
+  navigateToUpdateSubjects(authorId:any) {
+    this.router.navigate(['/update-subject'], { queryParams: { id: authorId } }); // Use the route path to "view-books"
+  }
 }

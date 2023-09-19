@@ -1,0 +1,22 @@
+<div class="subject-details">
+  <div class="subject-info">
+    <div class="subject-label">Subject ID:</div>
+    <div class="subject-value">{{ SubjectID }}</div>
+  </div>
+  <div class="subject-info">
+    <div class="subject-label">Subject Name:</div>
+    <div class="subject-value">{{ SubjectName }}</div>
+  </div>
+  <div class="subject-info">
+    <div class="subject-label">Description:</div>
+    <div class="subject-value">{{ Description }}</div>
+  </div>
+  <div class="subject-info">
+    <div class="subject-label">Teachers:</div>
+    <div class="subject-value">
+      <ul>
+        <li *ngFor="let teacher of Teachers.split(',')">{{ teacher.trim() }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

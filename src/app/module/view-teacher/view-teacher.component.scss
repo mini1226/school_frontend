@@ -1,0 +1,23 @@
+.teacher-details {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #59B1A6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.teacher-info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.teacher-label {
+  flex: 1;
+  font-weight: bold;
+  color: #59B1A6;
+}
+
+.teacher-value {
+  flex: 2;
+}

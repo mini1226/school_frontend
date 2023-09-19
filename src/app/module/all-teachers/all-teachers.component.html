@@ -11,6 +11,8 @@
         <th>Name</th>
         <th>Email</th>
         <th>Contact</th>
+        <th style="text-align: center">View</th>
+        <th style="text-align: center">Edit</th>
       </tr>
       </thead>
       <tbody>
@@ -19,6 +21,12 @@
         <td>{{ teacher.FirstName }} {{ teacher.LastName }}</td>
         <td>{{ teacher.Email }}</td>
         <td>{{ teacher.Phone }}</td>
+        <td style="text-align: center">
+          <button class="btn custom-view-button" (click)="navigateToViewTeachers(teacher.TeacherID)">VIEW</button>
+        </td>
+        <td style="text-align: center">
+          <button class="btn custom-view-button" (click)="navigateToUpdateTeachers(teacher.TeacherID)">EDIT</button>
+        </td>
       </tr>
       </tbody>
     </table>

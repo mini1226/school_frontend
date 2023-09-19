@@ -37,4 +37,14 @@ export class AllTeachersComponent implements OnInit{
   }
 
 
+
+  navigateToViewTeachers(authorId:any) {
+    this.router.navigate(['/view-teacher'], { queryParams: { id: authorId } }); // Use the route path to "view-books"
+  }
+
+  navigateToUpdateTeachers(authorId:any) {
+    this.router.navigate(['/update-teacher'], { queryParams: { id: authorId } }); // Use the route path to "view-books"
+  }
+
+
 }

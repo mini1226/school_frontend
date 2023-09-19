@@ -18,4 +18,8 @@ export class SubjectService {
     return this.http.post(environment.baseUrl + 'subjects',subject);
   }
 
+  getSubjectById(id:any): Observable<any> {
+    return this.http.get(environment.baseUrl + 'subjects/'+id);
+  }
+
 }

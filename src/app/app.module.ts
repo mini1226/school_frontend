@@ -11,6 +11,10 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import { ViewTeacherComponent } from './module/view-teacher/view-teacher.component';
+import { UpdateTeacherComponent } from './module/update-teacher/update-teacher.component';
+import { UpdateSubjectComponent } from './module/update-subject/update-subject.component';
+import { ViewSubjectComponent } from './module/view-subject/view-subject.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import {ReactiveFormsModule} from "@angular/forms";
     CreateSubjectComponent,
     NavBarComponent,
     SideBarComponent,
+    ViewTeacherComponent,
+    UpdateTeacherComponent,
+    UpdateSubjectComponent,
+    ViewSubjectComponent,
 
   ],
   imports: [

@@ -14,4 +14,12 @@ export class TeacherService {
     return this.http.get(environment.baseUrl + 'teachers');
   }
 
+  addTeacher(teacher: any): Observable<any> {
+    return this.http.post(environment.baseUrl + 'teachers',teacher);
+  }
+
+  getTeacherById(id:any): Observable<any> {
+    return this.http.get(environment.baseUrl + 'teachers/'+id);
+  }
+
 }
