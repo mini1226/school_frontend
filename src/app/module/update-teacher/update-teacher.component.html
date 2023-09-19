@@ -1,1 +1,87 @@
-<p>update-teacher works!</p>
+<div class="teacher-details">
+  <div class="teacher-info">
+    <div class="teacher-label">Teacher ID:</div>
+    <div class="teacher-value">{{ TeacherID }}</div>
+  </div>
+  <div class="teacher-info">
+    <div class="teacher-label">First Name:</div>
+    <div class="teacher-value">{{ FirstNamee }}</div>
+  </div>
+  <div class="teacher-info">
+    <div class="teacher-label">Last Name:</div>
+    <div class="teacher-value">{{ LastNamee }}</div>
+  </div>
+  <div class="teacher-info">
+    <div class="teacher-label">Email:</div>
+    <div class="teacher-value">{{ Emaill }}</div>
+  </div>
+  <div class="teacher-info">
+    <div class="teacher-label">Phone:</div>
+    <div class="teacher-value">{{ Phonee }}</div>
+  </div>
+  <div class="teacher-info">
+    <div class="teacher-label">Subject ID:</div>
+    <div class="teacher-value">{{ SubjectIDD }}</div>
+  </div>
+  <div class="teacher-info">
+    <div class="teacher-label">Subject Name:</div>
+    <div class="teacher-value">{{ SubjectName }}</div>
+  </div>
+</div>
+
+
+<div #element class="container pt-5">
+  <div class="card" style="border: 1px solid #59B1A6; border-radius: 10px;">
+    <div class="card-body p-4">
+      <h6 class="align-content-start font-weight-bold">CREATE BOOKS</h6>
+    </div>
+
+    <div class="container">
+      <form [formGroup]="teacherForm" autocomplete="off" class="mt-3">
+        <div class="form-group position-relative">
+          <label class="title-1" for="FirstName">First Name</label>
+          <input [formControl]="FirstName" class="form-control custom-input-style" id="FirstName" placeholder="First Name" type="text">
+          <div *ngIf="FirstName.invalid && FirstName.touched" class="error-message">
+            <div *ngIf="FirstName.errors.required">First Name is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group position-relative">
+          <label class="title-1" for="LastName">Last Name</label>
+          <input [formControl]="LastName" class="form-control custom-input-style" id="LastName" placeholder="Last Name" type="text">
+          <div *ngIf="LastName.invalid && LastName.touched" class="error-message">
+            <div *ngIf="LastName.errors.required">Last Name is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group position-relative">
+          <label class="title-1" for="Email">Email</label>
+          <input [formControl]="Email" class="form-control custom-input-style" id="Email" placeholder="Email" type="text">
+          <div *ngIf="Email.invalid && Email.touched" class="error-message">
+            <div *ngIf="Email.errors.required">Email is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group position-relative">
+          <label class="title-1" for="Phone">Contact</label>
+          <input [formControl]="Phone" class="form-control custom-input-style" id="Phone" placeholder="Contact" type="text">
+          <div *ngIf="Phone.invalid && Phone.touched" class="error-message">
+            <div *ngIf="Phone.errors.required">Contact is required!</div>
+          </div>
+        </div>
+
+        <div class="form-group position-relative">
+          <label for="SubjectID">Subject</label>
+          <select id="SubjectID" [formControl]="SubjectID" class="form-control custom-select-style">
+            <option value="" disabled selected>Select an Subject</option>
+            <option *ngFor="let subject of subjects" [value]="subject.SubjectID">{{ subject.SubjectName}}</option>
+          </select>
+        </div>
+
+        <div class="text-center pt-5 pb-5">
+          <button class="w-100 btn custom-ok-save-btn-style" style="background-color: #59B1A6" (click)="updateTeacher()">UPDATE TEACHER</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

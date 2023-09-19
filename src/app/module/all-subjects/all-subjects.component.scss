@@ -32,7 +32,7 @@
 
 /* Custom button style */
 .custom-view-button {
-  background-color: #59B1A6; /* Your desired background color */
+  background-color: #82E977; /* Your desired background color */
   color: white; /* Text color */
   border: none;
   border-radius: 5px;
@@ -42,5 +42,37 @@
 }
 
 .custom-view-button:hover {
-  background-color: #59B1A6; /* Hover color */
+  background-color: #82E977; /* Hover color */
+}
+
+
+/* Custom button style */
+.custom-edit-button {
+  background-color: #E9E177; /* Your desired background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.custom-edit-button:hover {
+  background-color: #E9E177; /* Hover color */
+}
+
+
+/* Custom button style */
+.custom-delete-button {
+  background-color: #E97777 ; /* Your desired background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.custom-delete-button:hover {
+  background-color: #E97777 ; /* Hover color */
 }

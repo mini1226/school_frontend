@@ -12,6 +12,7 @@
         <th>Description</th>
         <th style="text-align: center">View</th>
         <th style="text-align: center">Edit</th>
+        <th style="text-align: center">Delete</th>
       </tr>
       </thead>
       <tbody>
@@ -23,7 +24,10 @@
           <button class="btn custom-view-button" (click)="navigateToViewSubjects(subject.SubjectID)">VIEW</button>
         </td>
         <td style="text-align: center">
-          <button class="btn custom-view-button" (click)="navigateToUpdateSubjects(subject.SubjectID)">EDIT</button>
+          <button class="btn custom-edit-button" (click)="navigateToUpdateSubjects(subject.SubjectID)">EDIT</button>
+        </td>
+        <td style="text-align: center">
+          <button class="btn custom-delete-button" (click)="deleteSubjects(subject.SubjectID)">DELETE</button>
         </td>
       </tr>
       </tbody>

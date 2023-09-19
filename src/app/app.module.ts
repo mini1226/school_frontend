@@ -15,6 +15,10 @@ import { ViewTeacherComponent } from './module/view-teacher/view-teacher.compone
 import { UpdateTeacherComponent } from './module/update-teacher/update-teacher.component';
 import { UpdateSubjectComponent } from './module/update-subject/update-subject.component';
 import { ViewSubjectComponent } from './module/view-subject/view-subject.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {NgxSpinnerModule} from "ngx-spinner";
+import {AlertModule} from "ngx-alerts";
+
 
 @NgModule({
   declarations: [
@@ -33,9 +37,12 @@ import { ViewSubjectComponent } from './module/view-subject/view-subject.compone
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AlertModule.forRoot({maxMessages: 5, timeout: 5000, positionX: 'right', positionY: 'top'}),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,63 @@
+.subject-details {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #59B1A6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subject-info {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.subject-label {
+  flex: 1;
+  font-weight: bold;
+  color: #59B1A6;
+}
+
+.subject-value {
+  flex: 2;
+}
+
+
+/* Custom input style */
+.custom-input-style {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Error message style */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Custom select style */
+.custom-select-style {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Custom button style */
+.custom-ok-save-btn-style {
+  background-color: #59B1A6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-ok-save-btn-style:hover {
+  background-color: #59B1A6;
+}

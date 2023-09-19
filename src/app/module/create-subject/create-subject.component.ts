@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {SubjectService} from "../../core/services/subject/subject.service";
+import {NgxSpinnerService} from "ngx-spinner";
+import {AlertService} from "ngx-alerts";
 
 @Component({
   selector: 'app-create-subject',
@@ -14,7 +16,9 @@ export class CreateSubjectComponent {
     Description: new FormControl('', [Validators.required])
   });
 
-  constructor(private subjectService: SubjectService) {
+  constructor(private subjectService: SubjectService,
+              private spinner: NgxSpinnerService,
+              private alertService: AlertService) {
 
   }
 
@@ -28,17 +32,22 @@ export class CreateSubjectComponent {
 
 
 
-  addSubject( ): Promise<boolean> {
-    return new Promise(resolve => {
+  async addSubject( ): Promise<boolean> {
+    return new Promise(async resolve => {
+      await this.spinner.show();
       if (this.subjectForm.valid){
         this.subjectService.addSubject(this.subjectForm.value)
           .subscribe((res: any) => {
             console.log(res);
+            this.alertService.success('Subject Created successfully!');
             this.subjectForm.reset();
+            this.spinner.hide();
             resolve(true);
           }, (error: any) => {
             console.log(error.error);
+            this.alertService.success('Subject Create Failed!');
             resolve(false);
+            this.spinner.hide();
           });
       }
     });
