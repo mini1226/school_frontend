@@ -28,12 +28,13 @@ export class CreateSubjectComponent {
 
 
 
-  addAuthor( ): Promise<boolean> {
+  addSubject( ): Promise<boolean> {
     return new Promise(resolve => {
       if (this.subjectForm.valid){
         this.subjectService.addSubject(this.subjectForm.value)
           .subscribe((res: any) => {
             console.log(res);
+            this.subjectForm.reset();
             resolve(true);
           }, (error: any) => {
             console.log(error.error);

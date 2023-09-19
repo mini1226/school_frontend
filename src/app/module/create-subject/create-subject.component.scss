@@ -1,0 +1,30 @@
+/* Custom input style */
+.custom-input-style {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Error message style */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Custom button style */
+.custom-ok-save-btn-style {
+  background-color: #59B1A6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-ok-save-btn-style:hover {
+  background-color: #1cbd88;
+}

@@ -1,31 +1,31 @@
-<!--<div #element class="container">-->
-<!--  <div class="card" style="border: 1px solid #24EEA6; border-radius: 10px;">-->
-<!--    <div class="card-body p-4">-->
-<!--      <h6 class="align-content-start font-weight-bold">CREATE SUBJECT</h6>-->
-<!--    </div>-->
+<div #element class="container">
+  <div class="card" style="border: 1px solid #59B1A6; border-radius: 10px;">
+    <div class="card-body p-4">
+      <h6 class="align-content-start font-weight-bold">CREATE SUBJECT</h6>
+    </div>
 
-<!--    <div class="container">-->
-<!--      <form [formGroup]="subjectForm" autocomplete="off" class="mt-3">-->
-<!--        <div class="form-group position-relative">-->
-<!--          <label class="title-1" for="SubjectName">Subject Name</label>-->
-<!--          <input [formControl]="SubjectName" class="form-control custom-input-style" id="SubjectName" placeholder="Subject Name" type="text">-->
-<!--          <div *ngIf="SubjectName.invalid && SubjectName.touched" class="error-message">-->
-<!--&lt;!&ndash;            <div *ngIf="SubjectName.errors.required">Subject Name is required!</div>&ndash;&gt;-->
-<!--          </div>-->
-<!--        </div>-->
+    <div class="container">
+      <form [formGroup]="subjectForm" autocomplete="off" class="mt-3">
+        <div class="form-group position-relative">
+          <label class="title-1" for="SubjectName">Subject Name</label>
+          <input [formControl]="SubjectName" class="form-control custom-input-style" id="SubjectName" placeholder="Subject Name" type="text">
+          <div *ngIf="SubjectName.invalid && SubjectName.touched" class="error-message">
+            <div *ngIf="SubjectName.errors.required">Subject Name is required!</div>
+          </div>
+        </div>
 
-<!--        <div class="form-group position-relative">-->
-<!--          <label class="title-1" for="last_name">Last Name</label>-->
-<!--          <input [formControl]="last_name" class="form-control custom-input-style" id="last_name" placeholder="Last Name" type="text">-->
-<!--          <div *ngIf="last_name.invalid && last_name.touched" class="error-message">-->
-<!--            &lt;!&ndash;            <div *ngIf="last_name.errors.required">Last Name is required!</div>&ndash;&gt;-->
-<!--          </div>-->
-<!--        </div>-->
+        <div class="form-group position-relative">
+          <label class="title-1" for="Description">Description</label>
+          <input [formControl]="Description" class="form-control custom-input-style" id="Description" placeholder="Description" type="text">
+          <div *ngIf="Description.invalid && Description.touched" class="error-message">
+            <div *ngIf="Description.errors.required">Description is required!</div>
+          </div>
+        </div>
 
-<!--        <div class="text-center pt-5 pb-5">-->
-<!--          <button class="w-100 btn custom-ok-save-btn-style" (click)="addAuthor()">CREATE AUTHOR</button>-->
-<!--        </div>-->
-<!--      </form>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
+        <div class="text-center pt-5 pb-5">
+          <button class="w-100 btn custom-ok-save-btn-style" (click)="addSubject()">CREATE AUTHOR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
