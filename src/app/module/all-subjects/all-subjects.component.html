@@ -1,0 +1,28 @@
+<div #element class="container">
+  <div class="card" style="border: 1px solid #59B1A6">
+    <div class="card-body p-4">
+      <h6 class="align-content-start font-weight-bold">ALL SUBJECTS</h6>
+    </div>
+
+    <table class="table">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let subject of subjects">
+        <td>{{ subject.SubjectID }}</td>
+        <td>{{ subject.SubjectName }}</td>
+        <td>{{ subject.Description }}</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <div class="container">
+    </div>
+  </div>
+</div>

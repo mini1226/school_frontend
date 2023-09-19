@@ -1,0 +1,53 @@
+.dashicon:hover{
+  font-size: 1.3rem !important;
+  transition: 0.3s;
+}
+
+/* Sidebar Styles */
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 100vh; /* Set the height to 100% of viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Rest of your existing sidebar styles... */
+
+
+.sidebar .sidebar-profile {
+  text-align: center;
+  background-color: #FFFFFF; /* Profile background color */
+}
+
+//.sidebar .profile-details img {
+//  border-radius: 100px;
+//}
+
+.sidebar .sidebar-menu {
+  padding: 0 ; /* Adjust padding as needed */
+}
+
+.sidebar .menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu-items li {
+  margin-bottom: 10px; /* Adjust spacing between menu items */
+}
+
+/* Sidebar Hover Styles */
+.sidebar .menu-items li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; /* Link color */
+  transition: background-color 0.3s ease; /* Hover effect duration */
+}
+
+.sidebar .menu-items li a:hover {
+  background-color: #59B1A6; /* Hover background color */
+  color: #FFFFFF; /* Hover text color */
+}
